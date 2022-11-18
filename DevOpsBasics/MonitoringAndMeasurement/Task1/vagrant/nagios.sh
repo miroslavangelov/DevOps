@@ -4,6 +4,9 @@ echo "* Add hosts ..."
 echo "192.168.99.100 nagios.dob.lab nagios" >> /etc/hosts
 echo "192.168.99.101 docker.dob.lab docker" >> /etc/hosts
 
+echo "* Nagios hosts up"
+chmod u+s /bin/ping
+
 echo "* SELinux in permisive mode ..."
 setenforce 0
 
