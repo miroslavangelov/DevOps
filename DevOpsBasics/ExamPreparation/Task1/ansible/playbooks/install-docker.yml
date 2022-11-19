@@ -1,0 +1,9 @@
+---
+- hosts: docker
+  become: true
+  roles:
+    - git
+    - geerlingguy.java
+    - geerlingguy.docker
+    - nrpe
+    - dob-network
