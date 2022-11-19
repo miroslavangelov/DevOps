@@ -1,0 +1,6 @@
+---
+  - name: Disable SELinux
+    selinux:
+      state: disabled 
+  - name: Change permission on ping
+    file: dest=/bin/ping mode=u+s
